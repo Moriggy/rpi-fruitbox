@@ -2,9 +2,9 @@
 echo "----------------------"
 echo "Installing fruitbox..."
 echo "----------------------"
-rm master*
-rm -Rf rpi-fruitbox-master-backup
-mv rpi-fruitbox-master rpi-fruitbox-master-backup
+# rm master*
+# rm -Rf rpi-fruitbox-master-backup
+# mv rpi-fruitbox-master rpi-fruitbox-master-backup
 sudo apt-get -y install libsm-dev libxcursor-dev libxi-dev libxinerama-dev libxrandr-dev libxpm-dev libvorbis-dev libtheora-dev
 wget https://codeload.github.com/DOCK-PI3/rpi-fruitbox/zip/master
 unzip master
@@ -18,6 +18,6 @@ echo "1. Choose a skin (see skins directory); lets call it MYSKIN."
 echo "2. Edit (using nano for example) the skins/MYSKIN/fruitbox.cfg file"
 echo "   and change the MusicPath value to point to where your mp3 files are kept."
 echo "3. run fruitbox..."
-echo "   sudo ./fruitbox --cfg skins/MYSKIN/fruitbox.cfg"
+echo "   sudo ./fruitbox --cfg /opt/masos/emulators/fruitbox/skins/MYSKIN/fruitbox.cfg"
 echo ""
 echo "For help, run fruitbox with no arguments (i.e. ./fruitbox)"
