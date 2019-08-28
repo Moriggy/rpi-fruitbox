@@ -1,23 +1,21 @@
 #!/bin/bash
 echo "----------------------"
-echo "Installing fruitbox..."
+echo "Instalando fruitbox..."
 echo "----------------------"
-# rm master*
-# rm -Rf rpi-fruitbox-master-backup
-# mv rpi-fruitbox-master rpi-fruitbox-master-backup
+
 sudo apt-get -y install libsm-dev libxcursor-dev libxi-dev libxinerama-dev libxrandr-dev libxpm-dev libvorbis-dev libtheora-dev
-wget https://codeload.github.com/DOCK-PI3/rpi-fruitbox/zip/master
+wget https://codeload.github.com/Moriggy/rpi-fruitbox/zip/master
 unzip master
 rm master
 cd rpi-fruitbox-master
 chmod +x ./fruitbox
 echo
-echo "Quick Start Guide"
+echo "Guía de inicio rápido"
 echo "-----------------"
-echo "1. Choose a skin (see skins directory); lets call it MYSKIN."
-echo "2. Edit (using nano for example) the skins/MYSKIN/fruitbox.cfg file"
-echo "   and change the MusicPath value to point to where your mp3 files are kept."
-echo "3. run fruitbox..."
-echo "   sudo ./fruitbox --cfg /opt/masos/emulators/fruitbox/skins/MYSKIN/fruitbox.cfg"
+echo "1. Elige un skin (consulte el directorio de skins); vamos a llamarlo MYSKIN."
+echo "2. Edite (usando nano, por ejemplo) el archivo skins/MYSKIN/fruitbox.cfg"
+echo "   y cambie el valor de MusicPath para señalar dónde se guardan sus archivos mp3."
+echo "3. ejecuta fruitbox ..."
+echo "   sudo ./fruitbox --cfg /opt/emulos/emulators/fruitbox/skins/MYSKIN/fruitbox.cfg"
 echo ""
-echo "For help, run fruitbox with no arguments (i.e. ./fruitbox)"
+echo "Para obtener ayuda, ejecuta fruitbox sin argumentos (es decir ./fruitbox)"
